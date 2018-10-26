@@ -10,7 +10,7 @@ import { JOBOFFERS } from '../mock-job-offers';
   templateUrl: './jobOffers.component.html',
   styleUrls: ['./jobOffers.component.scss']
 })
-export class HeroesComponent implements OnInit {
+export class jobOffersComponent implements OnInit {
 
   joboffers = JOBOFFERS;
   selectedJobOffer: jobOffer
