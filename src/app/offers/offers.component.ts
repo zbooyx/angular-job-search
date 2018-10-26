@@ -10,10 +10,15 @@ import {OFFERS} from '../mock-job-offers';
 export class OffersComponent implements OnInit {
 
   offers = OFFERS;
+  selectedOffer: Offer;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect(offer: Offer): void {
+    this.selectedOffer = offer;
   }
 
 }

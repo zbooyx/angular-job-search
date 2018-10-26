@@ -1,4 +1,4 @@
-import { Offer } from './jobOffer';
+import { Offer } from './offer';
 
 export const OFFERS: Offer[] = [
   { id: 11, name: 'President' },
