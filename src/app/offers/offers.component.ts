@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Offer } from '../offer';
-import {OFFERS} from '../mock-job-offers';
+import { OFFERS } from '../mock-job-offers';
 
 @Component({
   selector: 'app-offers',
