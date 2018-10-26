@@ -1,6 +1,6 @@
-import { jobOffer } from './job-offers';
+import { Offer } from './jobOffer';
 
-export const JOBOFFERS: jobOffer[] = [
+export const OFFERS: Offer[] = [
   { id: 11, name: 'President' },
   { id: 12, name: 'Dealer' },
   { id: 13, name: 'theif' },

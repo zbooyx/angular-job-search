@@ -1,0 +1,6 @@
+<h2>My Job Offers</h2>
+<ul class="offers">
+  <li *ngFor="let offer of offers" (click)="onSelect(offer)">
+    <span class="badge">{{offer.id}}</span> {{offer.name}}
+  </li>
+</ul>

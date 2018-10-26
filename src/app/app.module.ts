@@ -2,13 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { JobOffersComponent } from './job-offers/job-offers.component';
 import { FormsModule } from '@angular/forms';
+import { OffersComponent } from './offers/offers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    JobOffersComponent
+    OffersComponent
   ],
   imports: [
     BrowserModule,
