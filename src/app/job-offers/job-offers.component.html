@@ -1,0 +1,20 @@
+<h2>JOB OFFERS</h2>
+<ul class="joboffers">
+  <li *ngFor="let jobOffer of joboffers"
+      [class.selected]="jobOffer === selectedJobOffer"
+      (click)="onSelect(jobOffer)">
+    <span class="badge">{{jobOffer.id}}</span> {{jobOffer.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedJobOffer">
+
+  <h2>{{selectedJobOffer.name }} Details</h2>
+  <div><span>id: </span>{{selectedJobOffer.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedJobOffer.name" placeholder="name">
+    </label>
+  </div>
+
+</div>
