@@ -1,4 +1,5 @@
 <h2>My Job Offers</h2>
+
 <ul class="offers">
   <li *ngFor="let offer of offers"
       [class.selected]="offer === selectedOffer"
@@ -16,4 +17,13 @@
     </label>
   </div>
 
+</div>
+
+<div>
+  <label>Add offer:
+    <input #offerName />
+  </label>
+  <button (click)="add(offerName.value)">
+    add
+  </button>
 </div>

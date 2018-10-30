@@ -17,8 +17,17 @@ export class OffersComponent implements OnInit {
   ngOnInit() {
   }
 
+  add(name: string): void {
+    name = name.trim();
+    if (!name) { return; }
+    this.offers.push(Offer);
+      };
+
+
   onSelect(offer: Offer): void {
     this.selectedOffer = offer;
   }
 
 }
+
+
