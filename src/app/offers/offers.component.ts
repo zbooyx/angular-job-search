@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Offer } from '../offer';
-import { OFFERS } from '../mock-job-offers';
+import {Component, OnInit} from '@angular/core';
+import {Offer} from '../offer';
+import {OFFERS} from '../mock-job-offers';
 
 @Component({
   selector: 'app-offers',
@@ -12,16 +12,18 @@ export class OffersComponent implements OnInit {
   offers = OFFERS;
   selectedOffer: Offer;
 
-  constructor() { }
 
   ngOnInit() {
   }
 
-  add(name: string): void {
+  add(name: any): void {
     name = name.trim();
-    if (!name) { return; }
-    this.offers.push(Offer);
-      };
+    if (!name) {
+      return;
+    }
+    this.offers.push(name);
+    console.log(this.offers);
+  }
 
 
   onSelect(offer: Offer): void {

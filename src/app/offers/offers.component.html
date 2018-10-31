@@ -21,7 +21,7 @@
 
 <div>
   <label>Add offer:
-    <input #offerName />
+    <input  [(ngModel)]="offerName.value" #offerName />
   </label>
   <button (click)="add(offerName.value)">
     add
