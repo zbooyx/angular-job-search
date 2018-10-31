@@ -1,6 +1,6 @@
 export class Offer {
   id: number;
-  name: string;
+  name: any;
 
   constructor(id: number, name: string) {
     this.id = id;
