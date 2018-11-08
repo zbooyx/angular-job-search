@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Offer} from '../offer';
+import {Offer} from './Offer';
 import {OFFERS} from '../mock-job-offers';
 
 @Component({
