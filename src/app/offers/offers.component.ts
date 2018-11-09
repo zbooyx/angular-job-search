@@ -13,6 +13,8 @@ export class OffersComponent implements OnInit {
   selectedOffer: Offer;
   offerName: string;
   offerID: number;
+  obj: object;
+
 
 
   ngOnInit() {
@@ -28,11 +30,18 @@ export class OffersComponent implements OnInit {
     this.offerName = '';
   }
 
-  rem(id: number): void {
+
+
+  removeIt(id: string): void {
+
+    const offer = this.offers.find(item => item.id.toString() === id );
+    const index: number = this.offers.indexOf(offer);
+
+    console.log(this.offers.indexOf(offer));
     if (!id) {
       return;
     }
-    this.offers.splice(this.offerID - 1, 1);
+    this.offers.splice(index, 1);
     console.log(this.offers);
     this.offerID = 0;
   }
