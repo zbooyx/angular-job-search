@@ -13,10 +13,6 @@ export class OffersComponent implements OnInit {
   selectedOffer: Offer;
   offerName: string;
   offerID: number;
-  obj: object;
-
-
-
   ngOnInit() {
   }
 
