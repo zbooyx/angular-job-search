@@ -9,20 +9,32 @@ import {OFFERS} from '../mock-job-offers';
 })
 export class OffersComponent implements OnInit {
 
-  offers = OFFERS;
+  offers: Offer[] = OFFERS;
   selectedOffer: Offer;
+  offerName: string;
+  offerID: number;
 
 
   ngOnInit() {
   }
 
-  add(name: any): void {
+  add(name: string): void {
     name = name.trim();
     if (!name) {
       return;
     }
-    this.offers.push(name);
+    this.offers.push(new Offer(this.offers.length + 1, name));
     console.log(this.offers);
+    this.offerName = '';
+  }
+
+  rem(id: number): void {
+    if (!id) {
+      return;
+    }
+    this.offers.splice(this.offerID, 0);
+    console.log(this.offers);
+    this.offerID = 0;
   }
 
 

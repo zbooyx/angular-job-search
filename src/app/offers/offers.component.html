@@ -21,9 +21,19 @@
 
 <div>
   <label>Add offer:
-    <input  [(ngModel)]="offerName.value" #offerName />
+    <input [(ngModel)]="offerName"/>
   </label>
-  <button (click)="add(offerName.value)">
+  <button (click)="add(offerName)">
     add
   </button>
 </div>
+
+<div>
+  <label>Remove offer with ID:
+    <input [(ngModel)]="offerID"/>
+  </label>
+  <button (click)="rem(offerID)">
+    Remove
+  </button>
+</div>
+
