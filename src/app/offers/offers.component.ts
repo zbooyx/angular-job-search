@@ -32,7 +32,7 @@ export class OffersComponent implements OnInit {
     if (!id) {
       return;
     }
-    this.offers.splice(this.offerID, 0);
+    this.offers.splice(this.offerID-1, 1);
     console.log(this.offers);
     this.offerID = 0;
   }
