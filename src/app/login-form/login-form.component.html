@@ -1,4 +1,4 @@
-<form (submit)="loginUser($event)">
+<form class="login-form" (submit)="loginUser($event)">
   <div class="input">
     <label>Username</label>
     <input type="text">
@@ -8,6 +8,7 @@
     <input type="password">
   </div>
   <div class="input">
-    <input type="button" value="Login">
+    <button routerLink="/crisis-center" routerLinkActive="active">Crisis Center</button>
+
   </div>
 </form>
