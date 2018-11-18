@@ -7,6 +7,7 @@ import {HeaderComponent} from './header/header.component';
 import {LoginFormComponent} from './login-form/login-form.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {RouterModule, Routes} from '@angular/router';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   {
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
