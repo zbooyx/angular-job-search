@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Router} from '@angular/router';
 import {BehaviorSubject} from 'rxjs';
-import {User} from './user';
+import {User} from 'src/app/auth/user';
 
 @Injectable()
 export class AuthService {
@@ -28,3 +28,5 @@ export class AuthService {
     this.router.navigate(['/login']);
   }
 }
+
+
