@@ -1,7 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
-import {FormsModule} from '@angular/forms';
+import {ControlContainer, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {OffersComponent} from './offers/offers.component';
 import {HeaderComponent} from './header/header.component';
 import {LoginFormComponent} from './login-form/login-form.component';
@@ -40,9 +40,12 @@ const appRoutes: Routes = [
     FormsModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
