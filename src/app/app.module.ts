@@ -10,6 +10,8 @@ import {RouterModule, Routes} from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './material';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { UserComponent } from './user/user.component';
 
 const appRoutes: Routes = [
   {
@@ -29,7 +31,9 @@ const appRoutes: Routes = [
     HeaderComponent,
     LoginFormComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
