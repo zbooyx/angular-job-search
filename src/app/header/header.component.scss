@@ -1,3 +1,47 @@
-button {
-  align-items: end;
+.header a, .footer a {
+  text-decoration: none;
 }
+.header__nav {
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  height: 5em;
+  width: auto;
+  flex: 2;
+}
+.header__cnt {
+  position: relative;
+  max-width: 1170px;
+  height: 71px;
+  margin: 0 auto;
+  font-size: 14px;
+  display: flex;
+}
+
+.header__nav_list {
+  display: inline-block;
+  position: static;
+  width: auto;
+  top: 0;
+  background: none;
+  max-height: 100%;
+  overflow: visible;
+}
+
+.header__nav_list_item {
+  display: block;
+  float: left;
+  line-height: 1.2em;
+}
+
+
+.header__nav_list_item_link {
+  padding: 2em .9em 2.1em;
+  display: block;
+  font-family: 'OpenSans-Regular', Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 1.2em;
+  max-height: 72px;
+  box-sizing: border-box;
+}
+
