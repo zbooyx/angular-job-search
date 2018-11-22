@@ -1,6 +1,7 @@
 .header a, .footer a {
   text-decoration: none;
 }
+
 .header__nav {
   display: inline-block;
   background: #fff;
@@ -9,13 +10,19 @@
   width: auto;
   flex: 2;
 }
+
+#main-logo {
+  vertical-align: middle;
+}
+
 .header__cnt {
   position: relative;
   max-width: 1170px;
-  height: 271px;
+  height: 120px;
   margin: 0 auto;
   font-size: 14px;
   display: flex;
+  vertical-align: middle;
 }
 
 .header__nav_list {
@@ -43,5 +50,13 @@
   font-size: 1.2em;
   max-height: 72px;
   box-sizing: border-box;
+  cursor: pointer;
+  background-color: #fff;
 }
+
+  .header__nav_list_item_link:hover {
+    color:#156fc3;
+  }
+
+
 
