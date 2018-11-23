@@ -21,6 +21,7 @@
   background-color: #fff;
   color: black;
 
+
   &.active-item {
     color: darkorchid;
   }
@@ -33,10 +34,14 @@
 
 .headerRouterItemLink {
   color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
 }
 
 .headerYourProfile {
   display: flex;
+
 }
 
 .headerYourProfileItem1 {
@@ -44,6 +49,17 @@
   align-items: center;
   padding: .7em 1em;
 
+}
+.headerYourProfileItemLink2 {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.headerYourProfileItemLink1 {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 .headerYourProfileItem2 {
