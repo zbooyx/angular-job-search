@@ -1,19 +1,7 @@
-.header a, .footer a {
-  text-decoration: none;
-}
-
 .header {
-
-}
-
-.header_nav {
   display: flex;
-  height: 5em;
-  width: auto;
-  //flex: 2;
-  background: red;
-  align-items: center;
-
+  justify-content: center;
+  text-decoration: none;
 }
 
 .logo {
@@ -22,29 +10,10 @@
   background-color: white;
 }
 
-.header__nav_list {
+.headerRouterLinks {
   display: flex;
-  align-items: center;
-  width: auto;
-  top: 0;
-  background: none;
-  max-height: 100%;
-  justify-content: space-between;
-
-}
-
-.header_nav_list_item {
-  display: flex;
-  align-items: center;
-}
-
-.header_nav_list_item_router_link {
-  padding: 2em 1em 2em;
-  display: flex;
-  //float: left;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
   font-size: 1em;
   max-height: 60px;
   box-sizing: border-box;
@@ -53,31 +22,40 @@
   color: black;
 
   &.active-item {
-    color: red;
+    color: darkorchid;
   }
 }
 
-.header_nav_list_item_router_link:hover {
-  color: #156fc3;
+.headerRouterItem {
+  padding: 2em 1em 2em;
+
 }
 
-.header_log {
-  background-color: darkcyan;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.header_yourProfile_content {
-  //background-color: aqua;
-}
-
-.header_yourProfile_content_log {
+.headerRouterItemLink {
   color: black;
+}
+
+.headerYourProfile {
+  display: flex;
+}
+
+.headerYourProfileItem1 {
+  display: flex;
+  align-items: center;
+  padding: .7em 1em;
 
 }
 
-.header_yourProfile_content_create_account {
+.headerYourProfileItem2 {
+  display: flex;
+  align-items: center;
+  padding: .7em 1em;
+  border-radius: 40px;
+  border: 2px solid #1825aa;
+}
+
+.headerYourProfileItemLink1 {
+
   color: black;
 }
 
@@ -146,3 +124,89 @@ $cartToolkitColor: #d31f62;
 }
 
 
+//.header a, .footer a {
+//  text-decoration: none;
+//}
+//
+//.header {
+//  display: flex;
+//  justify-content: center;
+//}
+//
+//.header-nav {
+//  display: flex;
+//  align-items: center;
+//  height: 5em;
+//  width: auto;
+//  background: red;
+//
+//
+//}
+//
+//.logo {
+//  display: flex;
+//  align-items: center;
+//  background-color: white;
+//}
+//
+//.header-nav-list {
+//  display: flex;
+//  align-items: center;
+//  width: auto;
+//  top: 0;
+//  background: none;
+//  max-height: 100%;
+//  justify-content: space-between;
+//
+//}
+//
+//.header-nav-list_item {
+//  display: flex;
+//  align-items: center;
+//}
+//
+//.header-nav-list-item-router-link {
+//  padding: 2em 1em 2em;
+//  display: flex;
+//  align-items: center;
+//  font-family: 'Open Sans', sans-serif;
+//  text-decoration: none;
+//  font-size: 1em;
+//  max-height: 60px;
+//  box-sizing: border-box;
+//  cursor: pointer;
+//  background-color: #fff;
+//  color: black;
+//
+//  &.active-item {
+//    color: darkorchid;
+//  }
+//}
+//
+//.header-nav-list-item-router-link:hover {
+//  color: #156fc3;
+//}
+//
+//.header-log {
+//  background-color: white;
+//  display: flex;
+//  justify-content: flex-end;
+//  align-items: center;
+//  padding: 1em 1em 1em;
+//}
+//
+//.header-yourProfile-content {
+//  //background-color: aqua;
+//}
+//
+//.header-yourProfile-content-log {
+//  color: black;
+//}
+//
+//.header-yourProfile-content-create-account {
+//  color: black;
+//}
+//
+
+//
+//
