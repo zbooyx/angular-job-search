@@ -2,17 +2,24 @@
   text-decoration: none;
 }
 
+.header {
+
+}
+
 .header__nav {
-  display: inline-block;
+  display: flex;
+
   background: #fff;
   position: relative;
   height: 5em;
   width: auto;
   flex: 2;
+  background: red;
 }
 
 #main-logo {
   vertical-align: middle;
+  align-content: center;
 }
 
 .header__cnt {
@@ -34,6 +41,7 @@
   background: none;
   max-height: 100%;
   overflow: visible;
+
 }
 
 .header__nav_list_item {
@@ -54,11 +62,87 @@
   cursor: pointer;
   background-color: #fff;
   color: black;
+
+  &.active-item {
+    color: red;
+  }
 }
 
 .header__nav_list_item_link:hover {
   color: #156fc3;
 }
 
+.header__nav__log {
+  background-color: green;
+  display: flex;
+}
+
+
+
+
+$cartToolkitColor: #d31f62;;
+
+
+.cart-tooltip {
+  position: relative;
+  display: inline-block;
+  background-color: #d31f62;
+  color: white;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  &__inside {
+    visibility: hidden;
+    max-width: 283px;
+    background-color: $cartToolkitColor;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: -500%;
+
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis horizontal (default value) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center; /* center items vertically, in this case */
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 92%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent $cartToolkitColor transparent;
+    }
+
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      text-align: left; /* only important for multiple lines */
+
+
+      &--text2 {
+        width: 80%;
+        right: 0;
+        max-width: 199px;
+        font-size: 13px;
+        font-weight: 600;
+        max-width: 199px;
+        background-color: orange;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.cart-tooltip:hover .cart-tooltip__inside {
+  visibility: visible;
+}
 
 

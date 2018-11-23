@@ -50,8 +50,7 @@ const appRoutes: Routes = [
   },
 
   {
-    path: '**',
-    component: HomeComponent
+    path: '**', redirectTo: 'home',
   }
 ];
 
