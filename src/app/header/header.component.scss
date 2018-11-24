@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
+  font-size: 14px;
   max-height: 60px;
   box-sizing: border-box;
   cursor: pointer;
@@ -53,13 +53,13 @@
 .headerYourProfileItemLink2 {
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 14px;
 }
 
 .headerYourProfileItemLink1 {
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 14px;
 }
 
 .headerYourProfileItem2 {
@@ -76,14 +76,15 @@
 }
 
 $cartToolkitColor: #d31f62;
-
+// tooltip z codePen a
 .cart-tooltip {
   position: relative;
   display: inline-block;
-  background-color: #d31f62;
+  background-color: $cartToolkitColor;
   color: white;
   padding-left: 1em;
   padding-right: 1em;
+  font-family: 'Open Sans', sans-serif;
 
   &__inside {
     visibility: hidden;
@@ -95,8 +96,9 @@ $cartToolkitColor: #d31f62;
     padding: 10px;
     position: absolute;
     z-index: 1;
-    top: 150%;
-    left: -500%;
+    top: 110%;
+    left: -50%;
+
 
     display: flex; /* establish flex container */
     flex-direction: row; /* make main axis horizontal (default value) */
@@ -112,6 +114,7 @@ $cartToolkitColor: #d31f62;
       border-width: 5px;
       border-style: solid;
       border-color: transparent transparent $cartToolkitColor transparent;
+
     }
 
     &-box {
@@ -119,6 +122,7 @@ $cartToolkitColor: #d31f62;
       align-items: center;
       justify-content: left;
       text-align: left; /* only important for multiple lines */
+
 
 
       &--text2 {
@@ -130,6 +134,7 @@ $cartToolkitColor: #d31f62;
         max-width: 199px;
         background-color: orange;
         line-height: 20px;
+
       }
     }
   }
@@ -137,6 +142,7 @@ $cartToolkitColor: #d31f62;
 
 .cart-tooltip:hover .cart-tooltip__inside {
   visibility: visible;
+
 }
 
 

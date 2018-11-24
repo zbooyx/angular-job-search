@@ -14,46 +14,8 @@ import {FirstJobComponent} from './first-job/first-job.component';
 import {EmployersProfileComponent} from './employers-profile/employers-profile.component';
 import {CreateCVComponent} from './create-cv/create-cv.component';
 import {AdvicesComponent} from './advices/advices.component';
-
-
-const appRoutes: Routes = [
-  {
-    path: 'advices',
-    component: AdvicesComponent,
-  },
-  {
-    path: 'home',
-    component: HomeComponent,
-    data: {page: 'Home page'}
-  },
-  {
-    path: 'createCV',
-    component: CreateCVComponent,
-  },
-  {
-    path: 'employersProfile',
-    component: EmployersProfileComponent,
-  },
-
-  {
-    path: 'firstJob',
-    component: FirstJobComponent,
-  },
-
-  {
-    path: 'home',
-    component: HomeComponent,
-  },
-  {
-    path: 'offers',
-    component: OffersComponent,
-  },
-
-  {
-    path: '**', redirectTo: 'home',
-  }
-];
-
+import {AppRoutingModule} from './app-routing.module';
+import {SearchComponent} from './offers/search/search.component';
 
 @NgModule({
   declarations: [
@@ -66,11 +28,12 @@ const appRoutes: Routes = [
     EmployersProfileComponent,
     CreateCVComponent,
     AdvicesComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes),
+    AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,

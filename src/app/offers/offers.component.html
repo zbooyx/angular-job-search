@@ -1,39 +1,40 @@
-<h2>My Job Offers</h2>
+<!--<h2>My Job Offers</h2>-->
 
-<ul class="offers">
-  <li *ngFor="let offer of offers"
-      [class.selected]="offer === selectedOffer"
-      (click)="onSelect(offer)">
-    <span class="badge">{{offer.id}}</span> {{offer.name}}
-  </li>
-</ul>
-<div *ngIf="selectedOffer">
+<!--<ul class="offers">-->
+  <!--<li *ngFor="let offer of offers"-->
+      <!--[class.selected]="offer === selectedOffer"-->
+      <!--(click)="onSelect(offer)">-->
+    <!--<span class="badge">{{offer.id}}</span> {{offer.name}}-->
+  <!--</li>-->
+<!--</ul>-->
+<!--<div *ngIf="selectedOffer">-->
 
-  <h2>{{selectedOffer.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedOffer.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedOffer.name" placeholder="name">
-    </label>
-  </div>
+  <!--<h2>{{selectedOffer.name | uppercase}} Details</h2>-->
+  <!--<div><span>id: </span>{{selectedOffer.id}}</div>-->
+  <!--<div>-->
+    <!--<label>name:-->
+      <!--<input [(ngModel)]="selectedOffer.name" placeholder="name">-->
+    <!--</label>-->
+  <!--</div>-->
 
-</div>
+<!--</div>-->
 
-<div>
-  <label>Add offer:
-    <input [(ngModel)]="offerName"/>
-  </label>
-  <button (click)="add(offerName)">
-    add
-  </button>
-</div>
+<!--<div>-->
+  <!--<label>Add offer:-->
+    <!--<input [(ngModel)]="offerName"/>-->
+  <!--</label>-->
+  <!--<button (click)="add(offerName)">-->
+    <!--add-->
+  <!--</button>-->
+<!--</div>-->
 
-<div>
-  <label>Remove offer with ID:
-    <input [(ngModel)]="offerID"/>
-  </label>
-  <button (click)="removeIt(offerID)">
-    Remove
-  </button>
-</div>
+<!--<div>-->
+  <!--<label>Remove offer with ID:-->
+    <!--<input [(ngModel)]="offerID"/>-->
+  <!--</label>-->
+  <!--<button (click)="removeIt(offerID)">-->
+    <!--Remove-->
+  <!--</button>-->
+<!--</div>-->
 
+<app-search></app-search>
