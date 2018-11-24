@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   text-decoration: none;
+
 }
 
 .logo {
@@ -31,6 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   :hover {
     color: #156fc3;
   }
@@ -58,6 +60,9 @@
   align-items: center;
   padding: .7em 1em;
 
+  :hover {
+    color: #156fc3;
+  }
 }
 
 .headerYourProfileItemLink1 {
@@ -90,11 +95,11 @@ $cartToolkitColor: #d31f62;
 .cart-tooltip {
   font-family: 'Open Sans', sans-serif;
   height: 74px;
-  width: 100px;
+  width: 86px;
   display: flex;
   justify-content: center;
   align-items: center;
-  //position: relative;
+  position: relative;
   background-color: $cartToolkitColor;
   color: white;
   cursor: pointer;
@@ -102,20 +107,16 @@ $cartToolkitColor: #d31f62;
   padding-right: 1em;
 
   &__inside {
-        visibility: hidden;
-    max-width: 283px;
+    visibility: hidden;
     background-color: $cartToolkitColor;
-    color: royalblue;
     text-align: center;
-    border-radius: 6px;
     padding: 10px;
     position: absolute;
-    z-index: 1;
-    top: 110%;
-    left: -50%;
+    top: 120%;
+    left: -20%;
 
 
-    display: flex; /* establish flex container */
+    //display: flex; /* establish flex container */
     flex-direction: row; /* make main axis horizontal (default value) */
     justify-content: center; /* center items horizontally, in this case */
     align-items: center; /* center items vertically, in this case */
@@ -124,30 +125,26 @@ $cartToolkitColor: #d31f62;
       content: "";
       position: absolute;
       bottom: 100%;
-      left: 92%;
-      margin-left: -5px;
-      border-width: 5px;
+      left: 50%;
+      margin-left: -15px;
+      border-width: 15px;
       border-style: solid;
       border-color: transparent transparent $cartToolkitColor transparent;
 
     }
 
     &-box {
-      display: flex;
-      align-items: center;
-      justify-content: left;
-      text-align: left; /* only important for multiple lines */
+      //display: flex;
+      //align-items: center;
+      //justify-content: left;
+      //text-align: left; /* only important for multiple lines */
 
 
       &--text2 {
-        width: 80%;
-        right: 0;
-        max-width: 199px;
-        font-size: 14px;
-        font-weight: 600;
-        background-color: orange;
-        line-height: 20px;
-        color: white;
+        //max-width: 300px;
+        //border-left: 30px;
+        //background-color: $cartToolkitColor;
+        //color: white;
 
       }
     }
