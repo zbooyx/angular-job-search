@@ -34,14 +34,17 @@
 
 .headerRouterItemLink {
   color: black;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 .headerYourProfile {
+  font-family: 'Open Sans', sans-serif;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
 
 .headerYourProfileItem1 {
@@ -50,29 +53,30 @@
   padding: .7em 1em;
 
 }
-.headerYourProfileItemLink2 {
-  font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
-  font-size: 14px;
-}
 
 .headerYourProfileItemLink1 {
-  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   font-size: 14px;
+  color: black;
 }
 
 .headerYourProfileItem2 {
+  height: 30px;
+  width: 90px;
   display: flex;
   align-items: center;
-  padding: .7em 1em;
+  justify-content: center;
+  padding: .1em .3em;
   border-radius: 40px;
   border: 2px solid #1825aa;
+
 }
 
-.headerYourProfileItemLink1 {
+.headerYourProfileItemLink2 {
 
-  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  color: #1825aa;
 }
 
 $cartToolkitColor: #d31f62;
@@ -84,7 +88,6 @@ $cartToolkitColor: #d31f62;
   color: white;
   padding-left: 1em;
   padding-right: 1em;
-  font-family: 'Open Sans', sans-serif;
 
   &__inside {
     visibility: hidden;
@@ -122,7 +125,6 @@ $cartToolkitColor: #d31f62;
       align-items: center;
       justify-content: left;
       text-align: left; /* only important for multiple lines */
-
 
 
       &--text2 {
