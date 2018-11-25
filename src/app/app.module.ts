@@ -16,6 +16,10 @@ import {CreateCVComponent} from './create-cv/create-cv.component';
 import {AdvicesComponent} from './advices/advices.component';
 import {AppRoutingModule} from './app-routing.module';
 import {SearchComponent} from './offers/search/search.component';
+import {FinderComponent} from './finder/finder.component';
+import {PopularComponent} from './offers/popular/popular.component';
+import {FilterComponent} from './offers/filter/filter.component';
+import {RecomendedComponent} from './offers/recomended/recomended.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import {SearchComponent} from './offers/search/search.component';
     EmployersProfileComponent,
     CreateCVComponent,
     AdvicesComponent,
-    SearchComponent
+    SearchComponent,
+    FinderComponent,
+    PopularComponent,
+    FilterComponent,
+    RecomendedComponent
   ],
   imports: [
     BrowserModule,
