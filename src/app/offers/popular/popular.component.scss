@@ -1,35 +1,56 @@
 .background {
-  background-color: white;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  background-color: #f1f1f1;
+  font-family: 'Open Sans', sans-serif;
+  color: #1b75bc;
+
   .container {
-    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 0;
+
+    .description {
+      font-size: 20px;
+      margin: 0;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #0c478a;
+      color: #262626;
+    }
+
+    .popularCategories {
+      font-size: 14px;
+
+      .popularFirstRow {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #f1f1f1;
+
+        .item {
+          background-color: white;
+          display: flex;
+          width: 20%;
+          padding-top: 1em;
+          padding-bottom: 1em;
+          cursor: pointer;
+        }
+      }
+
+      .popularSecondRow {
+        display: flex;
+        flex-direction: row;
+
+        .item {
+          background-color: white;
+          display: flex;
+          width: 20%;
+          padding-top: 1em;
+          padding-bottom: 1em;
+          cursor: pointer;
+        }
+      }
+    }
+
+
   }
 }
 
-.description {
-}
 
-.popularCategories {
-
-  display: flex;
-  flex-direction: column;
-
-}
-.popularFirstRow {
-  display: flex;
-  flex-direction: row;
-}
-
-.popularSecondRow {
-  display: flex;
-  flex-direction: row;
-}
-
-.item {
-  background-color: greenyellow;
-  display: flex;
-  width: 20%;
-  border: 1px solid black;
-}
