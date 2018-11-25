@@ -19,7 +19,9 @@
   display: flex;
   flex-direction: column;
   width: 90%;
+  box-shadow: 1px 1px 2px #dadada;
 }
+
 .popular {
   display: flex;
   flex-direction: column;
@@ -34,10 +36,26 @@
 
 .filterRecomendedPanel {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 
 }
 
+.filterRecomendedPanelContainer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  background: #f1f1f1;
+}
+
+.filter {
+  width: 25%;
+
+}
+
+.recomended {
+  width: 75%;
+}
 
 
 
