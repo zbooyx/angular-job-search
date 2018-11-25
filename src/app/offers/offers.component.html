@@ -1,55 +1,34 @@
-<div class="behind">
+<div class="background">
   <div class="sdds">
-    <p>Praca</p>
-    <app-search></app-search>
-    <p>Popularne</p>
-    <app-popular></app-popular>
-    <div class="offersRow">
-      <p>Filtruj</p>
-      <app-filter></app-filter>
-      <p>rekomend</p>
-      <app-recomended></app-recomended>
+
+    <div class="work">
+      <p class="workDescription">Praca</p>
+      <div class="workComponent">
+        <app-search></app-search>
+      </div>
+    </div>
+
+    <div class="popular">
+      <p class="popularDescription">Popularne</p>
+      <div class="popularComponent">
+        <app-popular></app-popular>
+      </div>
+    </div>
+
+    <div class="filterRecomendedPanel">
+      <div class="filter">
+        <p class="filterDescription">Filtruj</p>
+        <div class="filterComponent">
+          <app-filter></app-filter>
+        </div>
+      </div>
+      <div class="recomended">
+        <p class="recomendedDescription">Oferty rekomendowane dla Ciebie</p>
+        <div class="recomendedComponent">
+          <app-recomended></app-recomended>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-
-<!--<h2>My Job Offers</h2>-->
-
-<!--<ul class="offers">-->
-<!--<li *ngFor="let offer of offers"-->
-<!--[class.selected]="offer === selectedOffer"-->
-<!--(click)="onSelect(offer)">-->
-<!--<span class="badge">{{offer.id}}</span> {{offer.name}}-->
-<!--</li>-->
-<!--</ul>-->
-<!--<div *ngIf="selectedOffer">-->
-
-<!--<h2>{{selectedOffer.name | uppercase}} Details</h2>-->
-<!--<div><span>id: </span>{{selectedOffer.id}}</div>-->
-<!--<div>-->
-<!--<label>name:-->
-<!--<input [(ngModel)]="selectedOffer.name" placeholder="name">-->
-<!--</label>-->
-<!--</div>-->
-
-<!--</div>-->
-
-<!--<div>-->
-<!--<label>Add offer:-->
-<!--<input [(ngModel)]="offerName"/>-->
-<!--</label>-->
-<!--<button (click)="add(offerName)">-->
-<!--add-->
-<!--</button>-->
-<!--</div>-->
-
-<!--<div>-->
-<!--<label>Remove offer with ID:-->
-<!--<input [(ngModel)]="offerID"/>-->
-<!--</label>-->
-<!--<button (click)="removeIt(offerID)">-->
-<!--Remove-->
-<!--</button>-->
-<!--</div>-->
 
