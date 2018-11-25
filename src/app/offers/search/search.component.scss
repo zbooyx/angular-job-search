@@ -9,7 +9,7 @@
 .description {
   display: flex;
   font-family: 'OpenSans-Semibold',Arial,Helvetica,sans-serif;
-  color: #d31f62;
+  color: black;
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
@@ -20,15 +20,14 @@ margin-bottom: 2em;
 
 .form {
   display: flex;
-  background-color: sienna;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.inputL {
+.typeWord {
   padding: 1.1em .8em 1.1em;
 }
-.inputR {
+.typeLocalisation {
   padding: 1.1em .8em 1.1em;
 }
