@@ -3,15 +3,33 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  //justify-content: center;
   .container {
     margin: 1.5em;
   }
 }
+
 .description {
 }
 
-
 .popularCategories {
-  flex-wrap: wrap;
+
+  display: flex;
+  flex-direction: column;
+
+}
+.popularFirstRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.popularSecondRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  background-color: greenyellow;
+  display: flex;
+  width: 20%;
+  border: 1px solid black;
 }
