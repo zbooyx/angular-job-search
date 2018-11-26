@@ -1,35 +1,70 @@
-
 .background {
   background-color: white;
   width: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-}
-.description {
-  display: flex;
-  font-family: 'OpenSans', sans-serif;
-  color: black;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+
+  .description {
+    display: flex;
+    font-family: 'OpenSans', sans-serif;
+    color: black;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  .search {
+    margin-bottom: 2em;
+
+    .form {
+      display: flex;
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+      justify-content: space-between;
+
+      input {
+        width: 100%;
+        padding: 1.1em .8em 1.1em;
+        margin: 0 1rem;
+      }
+
+
+      .myButton {
+        background-color: #d31f62;
+        background-image: linear-gradient(#E40023, #CA0023);
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 22px;
+        padding: 13px 18px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        i{
+          margin-right: 1em;
+        }
+      }
+
+      .myButton:hover {
+        background-color: #d31f62;
+        background-image: linear-gradient(#CA0023, #E40023);
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 22px;
+        padding: 13px 18px;
+        text-decoration: none;
+      }
+
+      .myButton:active {
+        position: relative;
+        top: 1px;
+      }
+
+
+    }
+
+
+  }
+
+
 }
 
-.search{
-margin-bottom: 2em;
-}
 
-.form {
-  display: flex;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  justify-content: space-between ;
-}
-
-.typeWord {
-  padding: 1.1em .8em 1.1em;
-  margin: 0 auto;
-}
-.typeLocalisation {
-  padding: 1.1em .8em 1.1em;
-  margin: 0 auto;
-}
