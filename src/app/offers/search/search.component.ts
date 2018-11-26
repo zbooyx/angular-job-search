@@ -1,6 +1,4 @@
-import {Component, NgModule} from '@angular/core';
-import {MatSlider, MatSliderModule} from '@angular/material';
-import {AppComponent} from '../../app.component';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-search',
