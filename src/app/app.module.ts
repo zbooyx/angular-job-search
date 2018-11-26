@@ -6,7 +6,7 @@ import {OffersComponent} from './offers/offers.component';
 import {HeaderComponent} from './header/header.component';
 import {RouterModule, Routes} from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MaterialModule} from './material';
+// import {MaterialModule} from './material';
 import {HomeComponent} from './home/home.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {JobComponent} from './job/job.component';
@@ -21,6 +21,7 @@ import {PopularComponent} from './offers/popular/popular.component';
 import {FilterComponent} from './offers/filter/filter.component';
 import {RecomendedComponent} from './offers/recomended/recomended.component';
 import {SingleOfferComponent} from './offers/recomended/single-offer/single-offer.component';
+import {MaterialModule} from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -38,16 +39,16 @@ import {SingleOfferComponent} from './offers/recomended/single-offer/single-offe
     PopularComponent,
     FilterComponent,
     RecomendedComponent,
-    SingleOfferComponent
+    SingleOfferComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,
     ReactiveFormsModule,
     FontAwesomeModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -38,7 +38,8 @@
         text-decoration: none;
         display: flex;
         align-items: center;
-        i{
+
+        i {
           margin-right: 1em;
         }
       }
@@ -57,14 +58,14 @@
         position: relative;
         top: 1px;
       }
-
-
     }
-
+  }
+  .rangeSlider{
 
   }
-
-
 }
 
 
+mat-slider {
+  width: 300px;
+}
