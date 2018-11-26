@@ -12,8 +12,16 @@ import {AppComponent} from '../../app.component';
 
 export class SearchComponent {
 
+  first = true;
+  second = false;
+
   constructor() {
 
+  }
+
+  public metoda() {
+    this.first = !this.first;
+    this.second = !this.second;
   }
 }
 

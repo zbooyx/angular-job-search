@@ -4,54 +4,65 @@
   display: flex;
   flex-direction: column;
 
+  .first { background-color: red }
+  .second { background-color: yellow }
+
   .description {
     display: flex;
     font-family: 'OpenSans', sans-serif;
     color: black;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .search {
-    margin-bottom: 2em;
+    //margin-bottom: 2rem;
 
     .form {
       display: flex;
-      margin-left: 1.5em;
-      margin-right: 1.5em;
-      justify-content: space-between;
+      //margin-left: 2rem;
+      //margin-right: 2rem;
 
       input {
         width: 100%;
-        padding: 1.1em .8em 1.1em;
-        margin: 0 1rem;
+        height: 52px;
+        //margin: 0 1rem;
+        border: 1px solid #262626;
+
+      }
+      .searchColumn{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
       }
 
 
       .myButton {
         background-color: #d31f62;
-        background-image: linear-gradient(#E40023, #CA0023);
-        cursor: pointer;
-        color: #ffffff;
-        font-size: 22px;
-        padding: 13px 18px;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-
-        i {
-          margin-right: 1em;
-        }
-      }
-
-      .myButton:hover {
-        background-color: #d31f62;
         background-image: linear-gradient(#CA0023, #E40023);
         cursor: pointer;
         color: #ffffff;
         font-size: 22px;
-        padding: 13px 18px;
         text-decoration: none;
+        height: 52px;
+        width: 180px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+
+      .myButton:hover {
+        background-color: #d31f62;
+        background-image: linear-gradient(#E40023, #CA0023);
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 22px;
+        text-decoration: none;
+        height: 52px;
       }
 
       .myButton:active {
@@ -59,13 +70,22 @@
         top: 1px;
       }
     }
-  }
-  .rangeSlider{
 
   }
+
+  .rangeSliderContainer {
+    color: #156fc3;
+    //width: 10rem;
+    margin: 0 1rem;
+
+    .rangeSlider {
+
+    }
+  }
+
+
 }
 
-
 mat-slider {
-  width: 300px;
+  width: 60%;
 }
