@@ -8,7 +8,7 @@
 }
 .description {
   display: flex;
-  font-family: 'OpenSans-Semibold',Arial,Helvetica,sans-serif;
+  font-family: 'OpenSans', sans-serif;
   color: black;
   padding-left: 1.5em;
   padding-right: 1.5em;
@@ -22,12 +22,14 @@ margin-bottom: 2em;
   display: flex;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  justify-content: space-around;
+  justify-content: space-between ;
 }
 
 .typeWord {
   padding: 1.1em .8em 1.1em;
+  margin: 0 auto;
 }
 .typeLocalisation {
   padding: 1.1em .8em 1.1em;
+  margin: 0 auto;
 }

@@ -20,6 +20,7 @@ import {FinderComponent} from './finder/finder.component';
 import {PopularComponent} from './offers/popular/popular.component';
 import {FilterComponent} from './offers/filter/filter.component';
 import {RecomendedComponent} from './offers/recomended/recomended.component';
+import {SingleOfferComponent} from './offers/recomended/single-offer/single-offer.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {RecomendedComponent} from './offers/recomended/recomended.component';
     FinderComponent,
     PopularComponent,
     FilterComponent,
-    RecomendedComponent
+    RecomendedComponent,
+    SingleOfferComponent
   ],
   imports: [
     BrowserModule,
