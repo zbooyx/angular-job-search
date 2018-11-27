@@ -1,14 +1,15 @@
 <div class="dropdownMenu">
-  <div class="semiTitle" >
+  <div class="semiTitle">
 
-    <a class="mineButton" (click)="metoda123()" [ngClass]="{'first': first, 'second': second}" >Miejsce pracy
-      <i class="fa fa-chevron-down"></i>
+    <a class="myBtn" (click)="hideList = !hideList">Miejsce pracy
+      <i class="fa fa-chevron-up" *ngIf="hideList"></i>
+      <i class="fa fa-chevron-down" *ngIf="!hideList"></i>
     </a>
 
   </div>
-  <div class="menuContent" [ngClass]="{'first': first, 'second': second}">
+  <div class="lContent" [ngClass]="{'hidden' : hideList }">
     <ul>
-      <li><input type="checkbox" class="checkboxInput" > cała Polska</li>
+      <li><input type="checkbox" class="checkboxInput"> cała Polska</li>
       <li><input type="checkbox" class="checkboxInput"> dolnośląskie</li>
       <li><input type="checkbox" class="checkboxInput"> kujawsko-pomorskie</li>
       <li><input type="checkbox" class="checkboxInput"> lubelskie</li>
@@ -28,6 +29,5 @@
     </ul>
   </div>
 </div>
-
 
 
