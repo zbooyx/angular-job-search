@@ -5,9 +5,6 @@ import {Component} from '@angular/core';
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss']
 })
-
-
-
 export class SearchComponent {
 
   first = true;
@@ -20,6 +17,7 @@ export class SearchComponent {
   public metoda() {
     this.first = !this.first;
     this.second = !this.second;
+    console.log('dddd');
   }
 }
 
