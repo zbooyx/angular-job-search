@@ -8,10 +8,12 @@
 
 .inHeader {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 90%;
+  PADDING-LEFT: 5%;
+  padding-right: 5%;
   text-decoration: none;
   position: fixed;
-  width: 100%;
   background-color: white;
 }
 
