@@ -1,24 +1,96 @@
 <div class="dropdownMenu">
   <div class="semiTitle">
-
-    <a class="myBtn" (click)="hideList = !hideList">Miejsce pracy
+    <a class="dropdownButton" (click)="hideList = !hideList">Miejsce pracy
       <i class="fa fa-chevron-up" *ngIf="hideList"></i>
       <i class="fa fa-chevron-down" *ngIf="!hideList"></i>
     </a>
-
   </div>
-  <div class="lContent" [ngClass]="{'hidden' : hideList }">
+  <div class="listOfCities" [ngClass]="{'listOfCitiesHidden' : hideList }"  >
     <ul>
-      <li><input type="checkbox" class="checkboxInput"> cała Polska</li>
-      <li><input type="checkbox" class="checkboxInput"> dolnośląskie</li>
-      <li><input type="checkbox" class="checkboxInput"> kujawsko-pomorskie</li>
-      <li><input type="checkbox" class="checkboxInput"> lubelskie</li>
-      <li><input type="checkbox" class="checkboxInput"> lubuskie</li>
-      <li><input type="checkbox" class="checkboxInput"> łódzkie</li>
-      <li><input type="checkbox" class="checkboxInput"> małopolskie</li>
-      <li><input type="checkbox" class="checkboxInput"> mazowieckie</li>
-      <li><input type="checkbox" class="checkboxInput"> opolskie</li>
-      <li><input type="checkbox" class="checkboxInput"> pomorskie</li>
+      <li  ><input type="checkbox" class="checkboxInput" ngModel="all"> cała Polska</li>
+      <li><input type="checkbox" class="checkboxInput" ngChecked="all"> dolnośląskie
+        <ul>
+          <li><input type="checkbox" class="checkboxInput"> Bolesławiece</li>
+          <li><input type="checkbox" class="checkboxInput"> Dzierżoniów</li>
+          <li><input type="checkbox" class="checkboxInput"> Głogów</li>
+          <li><input type="checkbox" class="checkboxInput"> Jelenia Góra</li>
+        </ul>
+      </li>
+
+      <li><input type="checkbox" class="checkboxInput"> kujawsko-pomorskie
+        <ul>
+          <li><input type="checkbox" class="checkboxInput"> Bydgoszcz</li>
+          <li><input type="checkbox" class="checkboxInput"> Toruń</li>
+          <li><input type="checkbox" class="checkboxInput"> Grudziądz</li>
+          <li><input type="checkbox" class="checkboxInput"> Włocławek</li>
+        </ul>
+      </li>
+
+
+      <li><input type="checkbox" class="checkboxInput"> lubelskie
+        <ul>
+          <li><input type="checkbox" class="checkboxInput"> Chełm</li>
+          <li><input type="checkbox" class="checkboxInput"> Świdnica</li>
+          <li><input type="checkbox" class="checkboxInput"> Zamość</li>
+        </ul>
+      </li>
+
+
+      <li><input type="checkbox" class="checkboxInput"> lubuskie
+        <ul>
+          <li><input type="checkbox" class="checkboxInput"> Gorzów Wlkp.</li>
+          <li><input type="checkbox" class="checkboxInput"> Żielona Góra</li>
+          <li><input type="checkbox" class="checkboxInput"> Żagań</li>
+        </ul>
+      </li>
+
+
+      <li><input type="checkbox" class="checkboxInput"> łódzkie
+        <ul>
+          <li><input type="checkbox" class="checkboxInput"> Łódź</li>
+          <li><input type="checkbox" class="checkboxInput"> Pabianice</li>
+          <li><input type="checkbox" class="checkboxInput"> Opoczno</li>
+          <li><input type="checkbox" class="checkboxInput"> Skierniewice</li>
+
+        </ul>
+      </li>
+
+      <li><input type="checkbox" class="checkboxInput"> małopolskie
+        <ul>
+          <li><input type="checkbox" class="checkboxInput"> Gorlice</li>
+          <li><input type="checkbox" class="checkboxInput"> Tarnów</li>
+          <li><input type="checkbox" class="checkboxInput"> Nowy Sącz</li>
+          <li><input type="checkbox" class="checkboxInput"> Kraków</li>
+        </ul>
+      </li>
+
+
+      <li><input type="checkbox" class="checkboxInput"> mazowieckie
+        <ul>
+          <li><input type="checkbox" class="checkboxInput"> Ostrołęka</li>
+          <li><input type="checkbox" class="checkboxInput"> Płock</li>
+          <li><input type="checkbox" class="checkboxInput"> Radom</li>
+          <li><input type="checkbox" class="checkboxInput"> Warszawa</li>
+        </ul>
+      </li>
+
+
+      <li><input type="checkbox" class="checkboxInput"> opolskie
+        <ul>
+          <li><input type="checkbox" class="checkboxInput"> Opole</li>
+        </ul>
+      </li>
+
+
+      <li><input type="checkbox" class="checkboxInput"> pomorskie
+        <ul>
+          <li><input type="checkbox" class="checkboxInput"> Elbląg</li>
+          <li><input type="checkbox" class="checkboxInput"> Gdańsk</li>
+          <li><input type="checkbox" class="checkboxInput"> Kwidzyn</li>
+        </ul>
+      </li>
+
+
       <li><input type="checkbox" class="checkboxInput"> podkarpackie</li>
       <li><input type="checkbox" class="checkboxInput"> podlaskie</li>
       <li><input type="checkbox" class="checkboxInput"> świętokrzyskie</li>

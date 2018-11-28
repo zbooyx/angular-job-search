@@ -1,34 +1,41 @@
 .dropdownMenu {
   font-family: 'OpenSans-Light', sans-serif;
 
-  .myBtn {
+  .dropdownButton {
     font-size: 1.4em;
     cursor: pointer;
     color: #262626;
   }
 
-  .semiTitle {
+  .listOfCities {
 
+    ul {
+      padding-left: 0;
+      list-style-type: none;
+      transition: max-height .5s;
+      max-height:2299px;
+      overflow: hidden;
+
+      ul {
+        padding-left: 1rem;
+      }
+    }
   }
 
-  .lContent {
+  & .listOfCitiesHidden {
 
-    &.hidden
     ul {
-      list-style-type: none;
       max-height: 0;
       transition: max-height .5s;
-    }
 
-    ul {
-      list-style-type: none;
-      transition: max-height .5s;
-      max-height: 371px;
-      overflow: hidden;
+      ul {
+      }
     }
-
 
   }
-
 }
+
+
+
+
 
