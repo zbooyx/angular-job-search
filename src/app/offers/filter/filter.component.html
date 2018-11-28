@@ -5,15 +5,26 @@
       <i class="fa fa-chevron-down" *ngIf="!hideList"></i>
     </a>
   </div>
-  <div class="listOfCities" [ngClass]="{'listOfCitiesHidden' : hideList }"  >
+  <div class="listOfCities" [ngClass]="{'listOfCitiesHidden' : hideList }">
     <ul>
-      <li  ><input type="checkbox" class="checkboxInput" ngModel="all"> cała Polska</li>
-      <li><input type="checkbox" class="checkboxInput" ngChecked="all"> dolnośląskie
+      <li>
+        <input type="checkbox" class="checkboxInput" [(ngModel)]="country">
+        <!--(change)="  myVar1 = !myVar1 ;  myVar2 = !myVar2 ; myVar3 = !myVar3"-->
+        cała Polska
+      </li>
+      <li>
+        <input type="checkbox" class="checkboxInput" [(ngModel)]="voivodeship" (change)=changeCities()> dolnośląskie
         <ul>
-          <li><input type="checkbox" class="checkboxInput"> Bolesławiece</li>
-          <li><input type="checkbox" class="checkboxInput"> Dzierżoniów</li>
-          <li><input type="checkbox" class="checkboxInput"> Głogów</li>
-          <li><input type="checkbox" class="checkboxInput"> Jelenia Góra</li>
+          <li>
+            <input type="checkbox" class="checkboxInput" [(ngModel)]="city1" (change)=changeCities()> Bolesławiece
+          </li>
+          <li><input type="checkbox" class="checkboxInput" [(ngModel)]="city2" (change)=changeCities()> Dzierżoniów
+          </li>
+          <li><input type="checkbox" class="checkboxInput" [(ngModel)]="city3" (change)=changeCities()> Głogów
+          </li>
+          <li><input type="checkbox" class="checkboxInput" [(ngModel)]="city4" (change)=changeCities()> Jelenia
+            Góra
+          </li>
         </ul>
       </li>
 
@@ -103,3 +114,4 @@
 </div>
 
 
+<!--(click)="metoda123()" [ngClass]="{'first': first, 'second': second}"-->

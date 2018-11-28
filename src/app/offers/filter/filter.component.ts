@@ -7,24 +7,25 @@ import {Component} from '@angular/core';
 })
 export class FilterComponent {
 
-  first = true;
-  second = false;
-  third = true;
-  fourth = false;
-  hideList = false;
+
+  city1 = false;
+  city2 = false;
+  city3 = false;
+  city4 = false;
+  voivodeship = false;
+  country = false;
 
 
   constructor() {
 
   }
 
-  public metoda123() {
-    this.first = !this.first;
-    this.second = !this.second;
-    this.third = !this.third;
-    this.fourth = !this.fourth;
-    console.log(this.third);
+  public changeCities() {
+    if (this.city1 && this.city2 && this.city3 && this.city4) {
+      this.voivodeship = true;
+    }
   }
 }
 
 
+// this.myVar2 = !this.myVar2;
