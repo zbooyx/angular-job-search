@@ -1,92 +1,104 @@
-.background {
-  background: #f1f1f1;
+.content {
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  //background-color: #719ECE;
   width: 100%;
-  //height: 100%;
   font-family: 'Open Sans', sans-serif;
-  //max-width: 1170px;
+  flex-direction: column;
+  .query {
+    width: 100%;
+    max-width: 1170px;
+    justify-self: center;
+    padding: 3em;
 
-  .work {
-    padding-top: 74px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    .workDescription {
-      display: flex;
-      align-self: flex-start;
-      margin-left: 5%;
-      color: #212121;
-      font-size: 12px;
-    }
-
-    .workComponent {
+    .work {
+      padding-top: 74px;
       display: flex;
       flex-direction: column;
-      width: 90%;
-      box-shadow: 1px 1px 2px #dadada;
-    }
-  }
+      align-items: center;
 
-  .popular {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .popularComponent {
-      display: flex;
-      flex-direction: column;
-      width: 90%;
-    }
-  }
-
-  .filterRecomendedPanel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .filterRecomendedPanelContainer {
-      display: flex;
-      flex-direction: row;
-      width: 90%;
-      background: #f1f1f1;
-      .filterDescription {
-        text-align: left;
-        color: #0a449b;
-        font-family: 'OpenSans', sans-serif;
+      .workDescription {
+        display: flex;
+        align-self: flex-start;
+        margin-left: 5%;
+        color: #212121;
+        font-size: 12px;
       }
 
-      .filter {
-        margin-left: 1rem;
-        width: 25%;
-        .filterDescription{
-          font-size: 1.4rem;
+      .workComponent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-shadow: 1px 1px 2px #dadada;
+      }
+    }
+
+    .popular {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .popularComponent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+
+    .filterRecomendedPanel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .filterRecomendedPanelContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background: #f1f1f1;
+
+        .filterDescription {
+          text-align: left;
+          color: #0a449b;
+          font-family: 'OpenSans', sans-serif;
+        }
+
+        .filter {
+          margin-left: 1rem;
+          width: 25%;
+
+          .filterDescription {
+            font-size: 1.4rem;
+          }
+        }
+
+        .recomended {
+          width: 75%;
         }
       }
-
-      .recomended {
-        width: 75%;
-      }
     }
-  }
-  //from code Pen:
-  #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
 
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    //from code Pen:
+    #myBtn {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 30px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: red; /* Set a background color */
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 15px; /* Some padding */
+      border-radius: 10px; /* Rounded corners */
+      font-size: 18px; /* Increase font size */
+    }
+
+    #myBtn:hover {
+      background-color: #555; /* Add a dark-grey background on hover */
+    }
   }
 }
 
