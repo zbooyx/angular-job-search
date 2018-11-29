@@ -1,4 +1,6 @@
 import {Component} from '@angular/core';
+import {StateAndCity} from '../../../config/locations.config';
+
 
 @Component({
   selector: 'app-filter',
@@ -7,12 +9,7 @@ import {Component} from '@angular/core';
 })
 export class FilterComponent {
 
-
-  city1 = false;
-  city2 = false;
-  city3 = false;
-  city4 = false;
-  voivodeship = false;
+  stateAndCity: { state: string, cities: string[] }[] = StateAndCity;
   country = false;
 
 
@@ -20,11 +17,6 @@ export class FilterComponent {
 
   }
 
-  public changeCities() {
-    if (this.city1 && this.city2 && this.city3 && this.city4) {
-      this.voivodeship = true;
-    }
-  }
 }
 
 

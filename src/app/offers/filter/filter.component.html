@@ -9,106 +9,16 @@
     <ul>
       <li>
         <input type="checkbox" class="checkboxInput" [(ngModel)]="country">
-        <!--(change)="  myVar1 = !myVar1 ;  myVar2 = !myVar2 ; myVar3 = !myVar3"-->
         cała Polska
       </li>
-      <li>
-        <input type="checkbox" class="checkboxInput" [(ngModel)]="voivodeship" (change)=changeCities()> dolnośląskie
-        <ul>
-          <li>
-            <input type="checkbox" class="checkboxInput" [(ngModel)]="city1" (change)=changeCities()> Bolesławiece
-          </li>
-          <li><input type="checkbox" class="checkboxInput" [(ngModel)]="city2" (change)=changeCities()> Dzierżoniów
-          </li>
-          <li><input type="checkbox" class="checkboxInput" [(ngModel)]="city3" (change)=changeCities()> Głogów
-          </li>
-          <li><input type="checkbox" class="checkboxInput" [(ngModel)]="city4" (change)=changeCities()> Jelenia
-            Góra
-          </li>
-        </ul>
-      </li>
+      <ul *ngFor="let state of stateAndCity">
+        <li><input type="checkbox" class="checkboxInput">{{state.state}}
 
-      <li><input type="checkbox" class="checkboxInput"> kujawsko-pomorskie
-        <ul>
-          <li><input type="checkbox" class="checkboxInput"> Bydgoszcz</li>
-          <li><input type="checkbox" class="checkboxInput"> Toruń</li>
-          <li><input type="checkbox" class="checkboxInput"> Grudziądz</li>
-          <li><input type="checkbox" class="checkboxInput"> Włocławek</li>
-        </ul>
-      </li>
-
-
-      <li><input type="checkbox" class="checkboxInput"> lubelskie
-        <ul>
-          <li><input type="checkbox" class="checkboxInput"> Chełm</li>
-          <li><input type="checkbox" class="checkboxInput"> Świdnica</li>
-          <li><input type="checkbox" class="checkboxInput"> Zamość</li>
-        </ul>
-      </li>
-
-
-      <li><input type="checkbox" class="checkboxInput"> lubuskie
-        <ul>
-          <li><input type="checkbox" class="checkboxInput"> Gorzów Wlkp.</li>
-          <li><input type="checkbox" class="checkboxInput"> Żielona Góra</li>
-          <li><input type="checkbox" class="checkboxInput"> Żagań</li>
-        </ul>
-      </li>
-
-
-      <li><input type="checkbox" class="checkboxInput"> łódzkie
-        <ul>
-          <li><input type="checkbox" class="checkboxInput"> Łódź</li>
-          <li><input type="checkbox" class="checkboxInput"> Pabianice</li>
-          <li><input type="checkbox" class="checkboxInput"> Opoczno</li>
-          <li><input type="checkbox" class="checkboxInput"> Skierniewice</li>
-
-        </ul>
-      </li>
-
-      <li><input type="checkbox" class="checkboxInput"> małopolskie
-        <ul>
-          <li><input type="checkbox" class="checkboxInput"> Gorlice</li>
-          <li><input type="checkbox" class="checkboxInput"> Tarnów</li>
-          <li><input type="checkbox" class="checkboxInput"> Nowy Sącz</li>
-          <li><input type="checkbox" class="checkboxInput"> Kraków</li>
-        </ul>
-      </li>
-
-
-      <li><input type="checkbox" class="checkboxInput"> mazowieckie
-        <ul>
-          <li><input type="checkbox" class="checkboxInput"> Ostrołęka</li>
-          <li><input type="checkbox" class="checkboxInput"> Płock</li>
-          <li><input type="checkbox" class="checkboxInput"> Radom</li>
-          <li><input type="checkbox" class="checkboxInput"> Warszawa</li>
-        </ul>
-      </li>
-
-
-      <li><input type="checkbox" class="checkboxInput"> opolskie
-        <ul>
-          <li><input type="checkbox" class="checkboxInput"> Opole</li>
-        </ul>
-      </li>
-
-
-      <li><input type="checkbox" class="checkboxInput"> pomorskie
-        <ul>
-          <li><input type="checkbox" class="checkboxInput"> Elbląg</li>
-          <li><input type="checkbox" class="checkboxInput"> Gdańsk</li>
-          <li><input type="checkbox" class="checkboxInput"> Kwidzyn</li>
-        </ul>
-      </li>
-
-
-      <li><input type="checkbox" class="checkboxInput"> podkarpackie</li>
-      <li><input type="checkbox" class="checkboxInput"> podlaskie</li>
-      <li><input type="checkbox" class="checkboxInput"> świętokrzyskie</li>
-      <li><input type="checkbox" class="checkboxInput"> śląskie</li>
-      <li><input type="checkbox" class="checkboxInput"> warmińsko-mazurskie</li>
-      <li><input type="checkbox" class="checkboxInput"> wielkopolskie</li>
-      <li><input type="checkbox" class="checkboxInput"> zachodniopomorskie</li>
+          <ul *ngFor="let city of state.cities">
+            <li><input type="checkbox" class="checkboxInput">{{city}}
+            </li>
+          </ul>
+      </ul>
     </ul>
   </div>
 </div>
