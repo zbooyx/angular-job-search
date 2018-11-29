@@ -1,23 +1,35 @@
-<div class="background">
+<div class="content">
   <div class="container">
     <div class="logo">
       LOGO
     </div>
     <div class="description">
-      <div class="offerTitle">
-        Offer title
+      <div class="offerTitleRow">
+        <div class="offerTitle">
+          Offer title
+        </div>
+        <a class="favoriteIcon" (click)="favourite = !favourite">
+          <i class="fa fa-star" *ngIf="favourite"></i>
+          <span style=" color: darkgray">
+            <i class="fa fa-star" *ngIf="!favourite">
+            </i>
+          </span>
+        </a>
       </div>
+
       <div class="offerEmployer">
         Employer
       </div>
       <div class="moreOfferInfo">
-        <div class="localisation">
+        <div class="location">
           where
         </div>
         <div class="whenAdded">
-          when added
+          when
         </div>
       </div>
     </div>
   </div>
 </div>
+
+

@@ -1,6 +1,7 @@
 .background {
   background: #f1f1f1;
   width: 100%;
+  //height: 100%;
   font-family: 'Open Sans', sans-serif;
   //max-width: 1170px;
 
@@ -50,7 +51,6 @@
       background: #f1f1f1;
       .filterDescription {
         text-align: left;
-        //font-size: 1.8em;
         color: #0a449b;
         font-family: 'OpenSans', sans-serif;
       }
@@ -68,6 +68,7 @@
       }
     }
   }
+  //from code Pen:
   #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */

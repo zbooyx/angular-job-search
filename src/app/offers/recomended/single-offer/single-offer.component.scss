@@ -1,11 +1,11 @@
-
-.background {
+.content {
   background-color: white;
 
   .container {
+    padding: 1em;
     display: flex;
     flex-direction: row;
-    background-color: white;
+    //background-color: white;
     cursor: pointer;
     border-bottom: 1px solid #f1f1f1;
 
@@ -13,32 +13,59 @@
       background-color: darkgray;
       display: flex;
       align-items: center;
+      justify-content: center;
+      width: 8%;
 
     }
 
     .description {
+      width: 100%;
       margin-left: 1em;
+      display: flex;
+      flex-direction: column;
 
-      .offerTitle {
+      .offerTitleRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
+        .offerTitle {
+          width: 100%;
+          font-size: 1.2em;
+          color: #0a449b;
+
+          .favouriteIcon {
+            justify-self: flex-end;
+          }
+        }
       }
 
       .offerEmployer {
+        font-weight: 300;
+        font-size: .9em;
+        margin-right: .5em;
+        cursor: pointer;
 
       }
 
       .moreOfferInfo {
+        color: #8c8c8c;
         font-size: small;
         display: flex;
         flex-direction: row;
+        align-items: center;
 
 
-        .localisation {
 
+
+        .location {
+          width: 100%;
+          font-size: small;
         }
 
         .whenAdded {
-
+          display: flex;
+          justify-self: end;
         }
       }
     }
