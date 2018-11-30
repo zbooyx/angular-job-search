@@ -23,7 +23,7 @@ export class SingleOfferComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.offer);
+    // console.log(this.offer);
   }
 }
 

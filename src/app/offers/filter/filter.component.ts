@@ -9,15 +9,14 @@ import {StateAndCity} from '../../../config/locations.config';
 })
 export class FilterComponent {
 
-  stateAndCity: { state: string, cities: string[] }[] = StateAndCity;
-  country = false;
-
+  stateAndCity = StateAndCity;
 
   constructor() {
-
+    this.stateAndCity = this.stateAndCity.map(state => {
+        return Object.assign(state, {checked: false});
+      }
+    );
   }
-
 }
 
 
-// this.myVar2 = !this.myVar2;

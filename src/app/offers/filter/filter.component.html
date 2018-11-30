@@ -5,17 +5,20 @@
       <i class="fa fa-chevron-down" *ngIf="!hideList"></i>
     </a>
   </div>
-  <div class="listOfCities" [ngClass]="{'listOfCitiesHidden' : hideList }">
+  <div class="listOfCountryStatesAndCities"
+       [ngClass]="{'listOfCountryStatesAndCitiesHidden' : hideList }">
+
     <ul>
-      <li>
-        <input type="checkbox" class="checkboxInput" [(ngModel)]="country">
-        cała Polska
-      </li>
       <ul *ngFor="let state of stateAndCity">
-        <li><input type="checkbox" class="checkboxInput">{{state.state}}
+        <li><input type="checkbox" class="checkboxInputState"
+                   [(ngModel)]="state.checked">
+          {{state.state}}
 
           <ul *ngFor="let city of state.cities">
-            <li><input type="checkbox" class="checkboxInput">{{city}}
+            <li><input type="checkbox" class="checkboxInputCity"
+                       [checked]="state.checked">
+              {{city}}
+
             </li>
           </ul>
       </ul>
@@ -24,4 +27,3 @@
 </div>
 
 
-<!--(click)="metoda123()" [ngClass]="{'first': first, 'second': second}"-->

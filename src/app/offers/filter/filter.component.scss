@@ -8,7 +8,7 @@
     cursor: pointer;
   }
 
-  .listOfCities {
+  .listOfCountryStatesAndCities {
     font-weight: 300;
     font-size: .8em;
 
@@ -29,7 +29,7 @@
     }
   }
 
-  & .listOfCitiesHidden {
+  & .listOfCountryStatesAndCitiesHidden {
 
     ul {
       max-height: 0;
