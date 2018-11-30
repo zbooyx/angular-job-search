@@ -1,12 +1,12 @@
 <div class="content">
   <div class="container">
     <div class="logo">
-      LOGO
+      <img [src]="offer.logoURL">
     </div>
     <div class="description">
       <div class="offerTitleRow">
         <div class="offerTitle">
-          Offer title
+          {{offer.title}}
         </div>
         <a class="favoriteIcon" (click)="favourite = !favourite">
           <i class="fa fa-star" *ngIf="favourite"></i>
@@ -18,14 +18,14 @@
       </div>
 
       <div class="offerEmployer">
-        Employer
+        {{offer.employer}}
       </div>
       <div class="moreOfferInfo">
         <div class="location">
-          where
+          {{offer.location}}
         </div>
         <div class="whenAdded">
-          when
+          {{offer.date}}
         </div>
       </div>
     </div>

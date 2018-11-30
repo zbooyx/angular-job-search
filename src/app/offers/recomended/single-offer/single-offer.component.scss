@@ -14,8 +14,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 8%;
-
+      //width: 8%;
+      img {
+        width: 65px;
+        height: 65px;
+      }
     }
 
     .description {
@@ -54,8 +57,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-
-
 
 
         .location {
