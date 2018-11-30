@@ -115,7 +115,7 @@ export const Offers = [
     title: 'inzynier budowy',
     employer: 'budROCK',
     location: 'Chełm',
-    logoURL: '',
+    logoURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbIhI5Rc-mtiH8XwMoA_Cu4ain0P0CW1XV3P6inLnnSnPs_WyA',
     salary: 6550,
     date: '02/11/2018'
   },
