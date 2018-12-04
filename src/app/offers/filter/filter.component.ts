@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {StateAndCity} from '../../../config/locations.config';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {OffersService} from '../services/offers.service';
 
 
 @Component({
@@ -7,16 +7,24 @@ import {StateAndCity} from '../../../config/locations.config';
   templateUrl: './filter.component.html',
   styleUrls: ['./filter.component.scss']
 })
-export class FilterComponent {
+export class FilterComponent implements OnInit {
 
-  stateAndCity = StateAndCity;
+  stateAndCity = [];
+  hideList = false;
 
-  constructor() {
-    this.stateAndCity = this.stateAndCity.map(state => {
-        return Object.assign(state, {checked: false});
+  constructor( private offers: OffersService ) {}
+  ngOnInit(): void {
+    this.offers.getCities().subscribe(
+      (cities: any[]) => {
+        this.stateAndCity = cities;
+        this.stateAndCity = this.stateAndCity.map(state => {
+            return Object.assign(state, {checked: false});
+          }
+        );
       }
     );
   }
 }
+
 
 

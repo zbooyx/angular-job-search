@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Offers} from '../../../config/offers.config';
 
 @Component({
   selector: 'app-recomended',
@@ -15,7 +14,7 @@ export class RecomendedComponent {
     logoURL: string,
     salary: number,
     date: string
-  }[] = Offers;
+  }[] ;
   constructor() {
 
   }

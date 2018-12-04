@@ -20,6 +20,8 @@ import {FilterComponent} from './offers/filter/filter.component';
 import {RecomendedComponent} from './offers/recomended/recomended.component';
 import {SingleOfferComponent} from './offers/recomended/single-offer/single-offer.component';
 import {MaterialModule} from './material/material.module';
+import {HttpClientModule} from '@angular/common/http';
+import {OffersService} from './offers/services/offers.service';
 
 @NgModule({
   declarations: [
@@ -46,9 +48,10 @@ import {MaterialModule} from './material/material.module';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FontAwesomeModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [OffersService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
