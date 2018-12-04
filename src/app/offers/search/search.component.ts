@@ -18,7 +18,7 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
     this.offers.getNumberOfOffers().subscribe(
       (offersNumber: any[]) => {
-        console.log(offersNumber);
+        // console.log(offersNumber);
         this.offersAmount = offersNumber[0].howManyOffers;
       }
     );
