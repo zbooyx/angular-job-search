@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {OfferInterface} from '../../interfaces/offer.interface';
 
 @Component({
   selector: 'app-single-offer',
@@ -8,15 +9,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class SingleOfferComponent implements OnInit {
 
 
-  @Input() offer: {
-    title: string,
-    employer: string,
-    location: string,
-    region: string,
-    logoURL: string,
-    salary: number,
-    date: string
-  };
+  @Input() offer: OfferInterface;
 
   constructor() {
 

@@ -5,7 +5,7 @@
       "employer": "hairDead",
       "location": "Kielce",
       "region": "świętokrzyskie",
-      "logoURL": "http://chittagongit.com//images/barbershop-icon/barbershop-icon-8.jpg",
+      "logoURL": "https://ih0.redbubble.net/image.343461476.6530/ap,550x550,12x16,1,transparent,t.u1.png",
       "salary": 2222,
       "date": "07/11/2018"
     },
@@ -206,6 +206,11 @@
         "Gdańsk",
         "Kwidzyn"
       ]
+    }
+  ],
+  "offersAmount": [
+    {
+      "howManyOffers": "999"
     }
   ]
 }

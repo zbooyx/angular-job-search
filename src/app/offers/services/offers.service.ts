@@ -10,10 +10,15 @@ export class OffersService {
   }
 
   getOffers() {
-
+    return this.http.get('http://localhost:3000/offers');
   }
 
   getCities() {
-    return this.http.get( 'http://localhost:3000/stateAndCity');
+    return this.http.get('http://localhost:3000/stateAndCity');
+  }
+
+  getNumberOfOffers() {
+    return this.http.get('http://localhost:3000/offersAmount');
   }
 }
+
